@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Avelluna — Pregnancy Companion · Privacy Policy</title>
+<meta name="description" content="Avelluna is a privacy-first pregnancy companion. Your data stays on your phone. Read our privacy policy.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🌙%3C/text%3E%3C/svg%3E">
+<style>
+  :root{
+    --bg:#FAF8F4; --card:#fff; --primary:#789783; --deep:#4F6B5A; --soft:#DCE8DF;
+    --rose:#D9BFC5; --rose-deep:#B98791; --lav:#E8E2F0; --lav-deep:#9B8FB5;
+    --text:#343A36; --text2:#6f756f; --line:#EDEAE3;
+    --shadow:0 8px 28px rgba(62,74,66,.08), 0 1px 4px rgba(62,74,66,.04);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#171b18; --card:#202622; --primary:#8fb09b; --deep:#a9c8b4; --soft:#2a352e;
+      --rose:#5b4a4f; --rose-deep:#d9a9b4; --lav:#2c2937; --lav-deep:#b9aed3;
+      --text:#eceee9; --text2:#a2a8a2; --line:#2c332e; --shadow:0 8px 28px rgba(0,0,0,.35); }
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--text);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;padding-bottom:env(safe-area-inset-bottom)}
+  .serif{font-family:Georgia,"Times New Roman",serif}
+  a{color:var(--deep);text-decoration-color:var(--primary);text-underline-offset:3px}
+  .wrap{width:min(100% - 40px,760px);margin-inline:auto}
+  .glow{position:fixed;inset:0;z-index:-1;pointer-events:none;
+    background:radial-gradient(420px 420px at 100% -5%,var(--lav),transparent 70%),radial-gradient(380px 380px at -10% 30%,var(--soft),transparent 70%)}
+
+  nav{position:sticky;top:0;z-index:10;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+    background:color-mix(in srgb,var(--bg) 80%,transparent);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;text-decoration:none;color:var(--text)}
+  .brand svg{width:34px;height:34px}
+  nav .links{display:flex;gap:18px;font-size:14.5px}
+  nav .links a{text-decoration:none;color:var(--text2);font-weight:600;transition:color .2s}
+  nav .links a:hover{color:var(--deep)}
+
+  .hero{text-align:center;padding:64px 0 44px}
+  .hero svg{width:128px;height:128px;filter:drop-shadow(0 14px 24px rgba(79,107,90,.28));animation:float 5s ease-in-out infinite}
+  @keyframes float{50%{transform:translateY(-8px)}}
+  .hero h1{font-size:clamp(38px,8vw,58px);line-height:1.08;margin-top:26px;letter-spacing:-.5px;font-weight:600}
+  .tag{margin-top:10px;font-size:12px;letter-spacing:3px;color:var(--text2);font-weight:700}
+  .hero p.lead{margin:22px auto 0;max-width:560px;color:var(--text2);font-size:18px}
+  .pills{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:28px}
+  .pill{background:var(--soft);color:var(--deep);padding:8px 16px;border-radius:99px;font-size:14px;font-weight:700}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin:8px 0 56px}
+  .card{background:var(--card);border-radius:26px;padding:22px;box-shadow:var(--shadow)}
+  .card .ic{width:44px;height:44px;border-radius:15px;display:grid;place-items:center;font-size:22px;background:var(--soft);margin-bottom:12px}
+  .card h3{font-size:17px;margin-bottom:4px}
+  .card p{color:var(--text2);font-size:14.5px}
+
+  .policy h2.title{font-size:clamp(30px,6vw,40px);font-weight:600;letter-spacing:-.3px}
+  .policy .date{color:var(--text2);font-size:14px;margin:6px 0 22px}
+  .intro{background:linear-gradient(135deg,var(--soft),var(--lav));border-radius:26px;padding:22px;margin-bottom:16px}
+  section.sec{background:var(--card);border-radius:26px;padding:22px 22px 20px;margin-bottom:14px;box-shadow:var(--shadow)}
+  section.sec h3{display:flex;align-items:center;gap:12px;font-size:18px;margin-bottom:8px}
+  section.sec h3 span{flex:none;width:30px;height:30px;border-radius:50%;background:var(--soft);color:var(--deep);display:grid;place-items:center;font-size:13px;font-weight:800}
+  section.sec p,section.sec li{color:var(--text2);font-size:15.5px}
+  section.sec ul{padding-left:22px;margin-top:6px}
+  section.sec li{margin:3px 0}
+
+  .dev{margin:40px 0 0;border-radius:30px;padding:26px;color:#fff;display:flex;gap:18px;align-items:center;
+    background:linear-gradient(135deg,#8FAC9A,#5F7F6B);box-shadow:0 18px 36px rgba(79,107,90,.28)}
+  .dev svg{width:64px;height:64px;flex:none}
+  .dev small{letter-spacing:1.2px;font-size:11px;font-weight:700;opacity:.8}
+  .dev h4{font-size:26px;font-weight:600;line-height:1.2}
+  .dev a{color:#fff;font-weight:700}
+  footer{text-align:center;color:var(--text2);font-size:13px;padding:30px 0 40px}
+
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.hero svg{animation:none}}
+  @media (max-width:520px){nav .links a:first-child{display:none}.dev{flex-direction:column;text-align:center}}
+</style>
+</head>
+<body>
+<div class="glow"></div>
+
+<!-- Reusable logo (vector) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5B7B67"/><stop offset="1" stop-color="#9BB8A5"/></linearGradient>
+    <linearGradient id="cr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#F1E7D2"/></linearGradient>
+    <radialGradient id="pe" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFF1F3"/><stop offset="1" stop-color="#D7A3AE"/></radialGradient>
+    <mask id="moon"><rect width="100" height="100" fill="#fff"/><circle cx="58" cy="45" r="23.5" fill="#000"/></mask>
+    <symbol id="logo" viewBox="0 0 100 100">
+      <rect width="100" height="100" rx="26" fill="url(#bg)"/>
+      <path d="M69.4 17.3A38.5 38.5 0 0 1 69.4 82.7" fill="none" stroke="#E9D9B8" stroke-width="1.7" stroke-linecap="round" opacity=".95"/>
+      <circle cx="46" cy="52" r="27" fill="url(#cr)" mask="url(#moon)"/>
+      <circle cx="60.5" cy="53.5" r="8.2" fill="url(#pe)"/>
+      <path d="M60.5 44.5Q53 36 58.5 27.5Q67.5 33 60.5 44.5Z" fill="#E8E2F0"/>
+    </symbol>
+  </defs>
+</svg>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top"><svg><use href="#logo"/></svg><span class="serif">Avelluna</span></a>
+    <div class="links"><a href="#features">Features</a><a href="#privacy">Privacy Policy</a><a href="#developer">Developer</a></div>
+  </div>
+</nav>
+
+<main class="wrap" id="top">
+  <header class="hero">
+    <svg role="img" aria-label="Avelluna logo"><use href="#logo"/></svg>
+    <h1 class="serif">Avelluna</h1>
+    <div class="tag">PREGNANCY COMPANION</div>
+    <p class="lead">Every week, beautifully held. Track your journey and meet your baby week by week — calmly, and completely privately.</p>
+    <div class="pills"><span class="pill">🔒 Data stays on your phone</span><span class="pill">📴 Works offline</span><span class="pill">🚫 No account needed</span></div>
+  </header>
+
+  <div class="grid" id="features">
+    <div class="card reveal"><div class="ic">🍌</div><h3>Week by week</h3><p>See your baby’s size and development from week 4 to 40.</p></div>
+    <div class="card reveal"><div class="ic">📖</div><h3>Private journal</h3><p>Capture moods, milestones and memories only you can read.</p></div>
+    <div class="card reveal"><div class="ic">📅</div><h3>Calendar</h3><p>Keep appointments and your due date in one calm place.</p></div>
+    <div class="card reveal"><div class="ic">📸</div><h3>Photos</h3><p>Bump photos and ultrasounds, stored privately on-device.</p></div>
+    <div class="card reveal"><div class="ic">👣</div><h3>Kick counter</h3><p>Tap to count movements with a gentle timer.</p></div>
+    <div class="card reveal"><div class="ic">⚖️</div><h3>Weight trend</h3><p>A simple private chart of your progress.</p></div>
+  </div>
+
+  <article class="policy" id="privacy">
+    <h2 class="title serif reveal">Privacy Policy</h2>
+    <p class="date reveal">Last updated: November 16, 2026</p>
+
+    <div class="intro reveal">
+      Avelluna is a local-first pregnancy companion. Your pregnancy information stays on your phone. We do not run any server that stores your personal data, and we cannot see it.
+    </div>
+
+    <section class="sec reveal"><h3><span>1</span>Who we are</h3>
+      <p>Avelluna is designed and developed by <strong>Afaq Ahmad</strong>. Website: <a href="https://honexio.tech" rel="noopener">honexio.tech</a>. In this policy, “we” and “the app” mean Avelluna.</p></section>
+
+    <section class="sec reveal"><h3><span>2</span>Information stored on your device</h3>
+      <p>Everything you enter is saved only in a private database and private storage on your phone: your name (optional), due date, journal entries, appointments, photos and captions, weight entries, kick sessions and preferences. We do not receive, copy or upload any of it.</p></section>
+
+    <section class="sec reveal"><h3><span>3</span>What we never do</h3>
+      <ul><li>No accounts, sign-up or login.</li><li>No cloud sync, Firebase, Supabase or remote databases.</li><li>No analytics, advertising or tracking SDKs.</li><li>No selling or sharing of your information.</li><li>No transmission of personal data over the internet.</li></ul></section>
+
+    <section class="sec reveal"><h3><span>4</span>Internet use</h3>
+      <p>The app works fully offline. If “Public tips” is switched on in settings, it may download a public list of general wellness tips. This request contains no personal information from the app. You can turn it off at any time.</p></section>
+
+    <section class="sec reveal"><h3><span>5</span>Permissions</h3>
+      <p>Camera and photo library access are requested only when you choose to add a photo. Selected photos are copied into the app’s private storage and are never uploaded. You can revoke permissions in your phone’s settings at any time.</p></section>
+
+    <section class="sec reveal"><h3><span>6</span>Your control</h3>
+      <p>You can edit or delete any entry, photo or record inside the app. “Erase all my data” in settings permanently removes everything, and uninstalling the app also removes its stored data. Because data is only on your device, we cannot recover it for you — consider keeping your own backup of anything important.</p></section>
+
+    <section class="sec reveal"><h3><span>7</span>Children’s privacy</h3>
+      <p>Avelluna is intended for adults. We do not knowingly collect information from children, and we do not collect personal information from anyone.</p></section>
+
+    <section class="sec reveal"><h3><span>8</span>Medical disclaimer</h3>
+      <p>Avelluna provides general information only and is not medical advice. Always consult your doctor or midwife about your health and your baby’s health.</p></section>
+
+    <section class="sec reveal"><h3><span>9</span>Changes to this policy</h3>
+      <p>If this policy changes, the updated version and date will appear on this page and in the app.</p></section>
+
+    <section class="sec reveal"><h3><span>10</span>Contact</h3>
+      <p>For questions about this policy, please visit <a href="https://honexio.tech" rel="noopener">honexio.tech</a>.</p></section>
+  </article>
+
+  <div class="dev reveal" id="developer">
+    <svg><use href="#logo"/></svg>
+    <div>
+      <small>DESIGNED &amp; DEVELOPED BY</small>
+      <h4 class="serif">Afaq Ahmad</h4>
+      <a href="https://honexio.tech" rel="noopener">honexio.tech</a>
+    </div>
+  </div>
+</main>
+
+<footer>© <span id="y">2026</span> Avelluna · Afaq Ahmad · <a href="https://honexio.tech" rel="noopener">honexio.tech</a></footer>
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+  const els = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 });
+    els.forEach((el, i) => { el.style.transitionDelay = (i % 4) * 60 + 'ms'; io.observe(el); });
+  } else { els.forEach(el => el.classList.add('in')); }
+</script>
+</body>
+</html>
